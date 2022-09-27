@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Know More About Your Hero</title>
+
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:ital,wght@0,500;1,200;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./Style.css" />
+    <script src="./Main.js" defer></script>
+  </head>
+  <body>
+    <header class="header"><span class="Head-logo ">
+      <span class="Lg">M</span>ARVEL - <span class="Lg">D</span>C Heros
+    </span>
+    <span class="n_PAGE"><a href="./FAV/Favorite.html">Explore Favorites</a></span></header>
+    <div class="container">
+      <form id="hero-form">
+        <div class="form-group">
+          <label for="heros" 
+            >Go Checkout <span>Your Hero</span></label
+          >
+          <input
+            type="text"
+            id="heros"
+            class="form-control form-control-lg"
+            placeholder="Your Hero Is Here...."
+          />
+          <input
+            type="submit"
+            value="Find"
+            class="btn btn-dark btn-lg btn-block mt-3 py-2"
+          />
+        </div>
+      </form>
+
+      <div id="results"></div>
+    </div>
+  </body>
+</html>
+

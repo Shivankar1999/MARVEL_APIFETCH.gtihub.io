@@ -1,0 +1,174 @@
+header.header {
+    font-size: 25px;
+}
+
+header.header span.H_PAGE a{
+    display: block;
+    text-decoration: none;
+    font-size: 15px;
+    letter-spacing: 1.3px;
+    /* border: 1px solid black; */
+    padding: 12px 18px;
+    margin-right: 25px;
+    /* margin-right: 12px; */
+    color: rgb(5, 60, 78);
+    font-weight: 400;
+    box-shadow: 0px 0px 5px 2px rgba(47, 40, 40, 0.624);
+    background-color: rgba(255, 255, 255, 0.986);
+    transition:  all 0.7s ease;
+}
+
+header.header span.H_PAGE a:hover{
+    scale: 0.9;
+    border: 1px solid black;
+    color: blue;
+    box-shadow: 0px 0px 6px 2px rgb(80, 125, 193);
+}
+.container{
+    /* border: 1px solid red; */
+    width: 1250px ;
+    height: 90vh;
+    margin: auto;
+    /* overflow: hidden; */
+    /* max-height: 90vh; */
+    margin-top: 8%;
+}
+
+.container .favourite-folders{
+    padding: 8px;
+    /* overflow: hidden; */
+    width: 90%;
+    height: auto;
+    /* max-height: 100vh; */
+    margin: auto;
+    /* max-height: 600px; */
+    /* border: 1px solid darkblue; */
+    box-shadow: 0px 0px 8px 3px rgba(0, 0, 0, 0.06);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+} 
+.container .favourite-folders div.folder-head {
+width: 80%;
+/* height: 80%; */
+margin: auto;
+
+}
+.container .favourite-folders div.folder-head h3{
+    text-transform: uppercase;
+    color: rgb(45, 171, 171);
+    text-shadow: 1px 1px 2px #000;
+    font-size: 25px;
+    word-spacing: 1.9px;
+    letter-spacing: 1.3px;
+}
+
+.container .favourite-folders  .folders{
+    width: 1000px;
+    height: 100%;
+    /* height: 200px; */
+    /* border: 2px solid black; */
+    padding: 6px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: left;
+}
+
+.container .favourite-folders  .folders .folder{
+    /* width: 260px; */
+    flex-basis: 250px;
+    height:350px;
+    padding: 8px;
+    border-radius: 4px;
+    /* border: 1px solid black; */
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.724);
+    align-self: flex-start;
+    margin: 5px 8px;
+    transition: all 1s ease-in-out;
+}
+.container .favourite-folders  .folders .folder:hover{
+     transition: all 0.5s ease-in-out;
+     cursor: pointer;
+    transform: scale(0.92);
+}
+
+.container .favourite-folders  .folders .folder .imgbox{
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 4px;
+    overflow: hidden;
+    padding: 0;
+
+}
+.container .favourite-folders  .folders .folder .imgbox img{
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.container .favourite-folders  .folders .folder p{
+    display: block;
+    width: 100%;
+    color: rgb(3, 3, 3);
+    font-weight: 600;
+}
+.container .favourite-folders  .folders .folder button {
+    display: block;
+    margin-top: 10px;
+    padding: 12px 15px;
+    text-transform: capitalize;
+    border: 2px solid black;
+    color: rgb(1, 1, 1);
+    font-weight: bold;
+    border-radius: 3px;
+    outline: none;
+
+    background-color: rgb(255, 255, 255);
+    transition:  all 0.7s ease-in-out;
+}
+
+
+.container .favourite-folders  .folders .folder button:hover{
+    transition: all 0.7s ease-in-out;
+    border:2px solid rgb(56, 7, 7);
+    /* color: orangered; */
+    /* font-weight: bolder; */
+    /* background-color: rgba(213, 205, 205, 0.289); */
+     color: black;
+    /* background-color: transparent; */
+    cursor: pointer;
+    transform: scale(0.9);
+}
+button#ClearAll{
+    position: fixed;
+    /* color: #fff; */
+    z-index: 8;
+    top: 85%;
+    left: 90%;
+    text-transform: uppercase;
+    background-color: #fff;
+    padding: 10px 18px ;
+    border-radius: 3px;
+    border: 2px solid aquamarine;
+    font-weight: 600;
+    width: 130px;
+    color: black;
+    cursor: pointer;
+}
+button#ClearAll:hover{
+    transition:  all 0.5s ease-out;
+    /* border: 1px solid rgb(14, 15, 15); */
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: lightblue;
+    
+}
